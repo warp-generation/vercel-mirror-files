@@ -872,6 +872,10 @@ document.getElementById('promoButton').onclick = function() {
     window.location.href = 'https://storage.googleapis.com/amnezia/amnezia.org?m-path=premium&arf=VG755WBZDBAPGGYM';
 }
 
+document.getElementById('adButton').onclick = function() {
+    window.location.href = 'https://t.me/AgnosiaVPN_bot'
+}
+
 function getSelectedSites() {
 	
 	const toggleCheckbox = document.getElementById('rules');
