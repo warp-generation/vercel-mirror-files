@@ -170,7 +170,7 @@ async function generateConfig(version) {
 			{dns = dns.split(',').filter(ip => !ip.includes(':')).join(',')}
 
 			const mtuInput = document.getElementById('mtu');
-			const mtuVal = mtuInput?.value.trim() || mtuInput?.placeholder || '1420';
+			const mtuVal = mtuInput?.value.trim() || mtuInput?.placeholder || '1280';
 
 	// --- AWG 3.0 ---
 		const awg3Toggle = document.getElementById('awg3');
@@ -274,7 +274,7 @@ async function generateConfig4() {
 		let msqp = ''
 		let proxy = ''
 		const mtuInput = document.querySelector('#infoModal2 #mtu');
-		const mtuVal = mtuInput?.value.trim() || mtuInput?.placeholder || '1420';
+		const mtuVal = mtuInput?.value.trim() || mtuInput?.placeholder || '1280';
 
 // --- AWG 3.0 ---
 const awg3cToggle = document.getElementById('awg3c');
@@ -518,7 +518,7 @@ rules:
 - MATCH,WARP`
 
 		const mtuInput = document.querySelector('#infoModal2 #mtu');
-		const mtuVal = mtuInput?.value.trim() || mtuInput?.placeholder || '1420';
+		const mtuVal = mtuInput?.value.trim() || mtuInput?.placeholder || '1280';
 
 // --- AWG 3.0 ---
 const awg3cToggle = document.getElementById('awg3c');
@@ -713,7 +713,7 @@ async function generateConfig5() { showWarningIfNeeded(async () => {
 	const domains = ['apteka.ru', 'psbank.ru', 'lenta.ru', 'www.pochta.ru', 'rzd.ru', 'rutube.ru', 'gosuslugi.ru'];
 	const randomDomain = customDomain || domains[Math.floor(Math.random() * domains.length)];
 	const mtuInput = document.getElementById('mtu');
-	const mtuVal = mtuInput?.value.trim() || mtuInput?.placeholder || '1420';
+	const mtuVal = mtuInput?.value.trim() || mtuInput?.placeholder || '1280';
 
     button.disabled = true;
     button.classList.add("button--loading");
