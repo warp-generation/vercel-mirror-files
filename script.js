@@ -28,7 +28,8 @@ function generateRandomEndpoint() {
 			"8.47.69.",
 			"188.114.96.",
 			"188.114.97.",
-			"188.114.98."
+			"188.114.98.",
+			"188.114.99."
 		];
 		const prefix = prefixes[Math.floor(Math.random() * prefixes.length)];
 
@@ -112,13 +113,13 @@ function getSelectedDNS() {
 	} else if (document.getElementById('malw').checked) {
 		return "95.216.204.218, 80.253.249.40, 2a01:4f9:c014:6dac::1, 2a12:bec4:1460:5b7::2";
 	} else if (document.getElementById('xbox').checked) {
-		return "111.88.96.50, 111.88.96.51, 2a00:ab00:1233:26::50, 2a00:ab00:1233:26::51";
+		return "111.88.96.54, 111.88.96.55, 2a00:ab00:1233:26::50, 2a00:ab00:1233:26::51";
 	} else if (document.getElementById('geohide').checked) {
-		return "45.155.204.190, 37.230.192.51, 193.233.112.67, 193.233.112.68";
+		return "193.233.112.67, 193.233.112.68, 193.233.112.88, 45.155.204.190, 37.230.192.51, 46.8.158.6";
 	} else if (document.getElementById('comss').checked) {
 		return "83.220.169.155, 212.109.195.93, 195.133.25.16, 2a01:230:4:915::2, 2a01:230:4:306::2";
 	} else if (document.getElementById('google').checked) {
-		return "8.8.8.8, 8.8.4.4, 2001:4860:4860::8888, 2001:4860:4860::8844";	
+		return "8.8.8.8, 8.8.4.4, 2001:4860:4860::8888, 2001:4860:4860::8844";
 	}}
 
 
@@ -710,7 +711,7 @@ async function generateConfig5() { showWarningIfNeeded(async () => {
 
 	const customDomainInput = document.getElementById('i1');
 	const customDomain = customDomainInput ? customDomainInput.value.trim() : '';
-const domains = [
+	const domains = [
     '175bru.ru',
     '1tv.ru',
     '2an.ru',
@@ -766,7 +767,6 @@ const domains = [
     'doctis.ru',
     'domashniy.ru',
     'doverie-tv.ru',
-    'dzen.ru',
     'e-katalog.ru',
     'eapteka.ru',
     'edadeal.ru',
@@ -812,6 +812,7 @@ const domains = [
     'karcher.ru',
     'kartaslov.ru',
     'karusel-tv.ru',
+    'kg-portal.ru',
     'khl.ru',
     'kinopoisk.ru',
     'knigogid.ru',
@@ -821,10 +822,12 @@ const domains = [
     'kopilkaurokov.ru',
     'kp.ru',
     'kreml.ru',
+    'kuban24.tv',
     'lektorium.tv',
+    'lentainform.com',
     'letidor.ru',
     'lib.ru',
-	'linkgroup.ru',
+    'linkgroup.ru',
     'litres.ru',
     'livejournal.com',
     'livelib.ru',
@@ -833,10 +836,10 @@ const domains = [
     'm24.ru',
     'maam.ru',
     'magnit.ru',
-    'mail.ru',
     'mariinsky.ru',
     'matchtv.ru',
     'med-otzyv.ru',
+    'medelement.com',
     'medi.ru',
     'mediametrics.ru',
     'medicalinsider.ru',
@@ -926,7 +929,6 @@ const domains = [
     'sovsport.ru',
     'spastv.ru',
     'sport24.ru',
-    'sportmail.ru',
     'sportrbc.ru',
     'sportsdaily.ru',
     'stihi.ru',
@@ -957,8 +959,6 @@ const domains = [
     'vgtrk.ru',
     'videouroki.net',
     'vitrina.tv',
-    'vk.ru',
-    'vkvideo.ru',
     'vm.ru',
     'vokrugsveta.ru',
     'vrachirf.ru',
