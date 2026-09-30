@@ -1150,7 +1150,7 @@ ${dnsServers}
             "protocol": "wireguard",
             "settings": {
                 "address": [
-                    "${data.client_ipv4;}/32"${ipv6}
+                    "${data.client_ipv4}/32"${ipv6}
                 ],
                 "mtu": ${mtuVal},
                 "peers": [
