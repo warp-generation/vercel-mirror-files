@@ -1,254 +1,49 @@
 const wiresockDomains = [
-    '175bru.ru',
-    '1tv.ru',
-    '2an.ru',
-    '360tv.ru',
-    '4ege.ru',
-    '5-tv.ru',
-    '9111.ru',
-    'akbars.ru',
-    'allhockey.ru',
-    'amalgama-lab.com',
-    'apteka.ru',
-    'aptekamos.ru',
-    'arbitr.ru',
-    'arhangelskoe.su',
-    'artchive.ru',
-    'arzamas.academy',
-    'asna.ru',
-    'ati.su',
-    'autonews.ru',
-    'avtovzglyad.ru',
-    'baby.ru',
-    'babyblog.ru',
-    'bbr.ru',
-    'belkacar.ru',
-    'blizko.ru',
-    'bolshoi.ru',
-    'borodino.ru',
-    'bspb.ru',
-    'c2dns.net',
-    'c2dns.ru',
-    'championat.com',
-    'chitalnya.ru',
-    'consmed.ru',
-    'consultant.ru',
-    'cosmo.ru',
-    'ctc.ru',
-    'culture.ru',
-    'dalenabank.ru',
-    'datalesson.ru',
-    'deepseek.com',
-    'delivery-club.ru',
-    'dnevnik.ru',
-    'docdoc.ru',
-    'doctis.ru',
-    'domashniy.ru',
-    'doverie-tv.ru',
-    'e-katalog.ru',
-    'eapteka.ru',
-    'edadeal.ru',
-    'edimdoma.ru',
-    'edu.ru',
-    'elibrary.ru',
-    'f1news.ru',
-    'fantlab.ru',
-    'fighttime.ru',
-    'filmpro.ru',
-    'fipi.ru',
-    'fips.ru',
-    'fitseven.ru',
-    'forumhouse.ru',
-    'foxford.ru',
-    'friday.ru',
-    'fsb.ru',
-    'fss.ru',
-    'fssprus.ru',
-    'garant.ru',
-    'gaso.ru',
-    'gks.ru',
-    'gosfilmofond.ru',
-    'goskatalog.ru',
-    'health-diet.ru',
-    'hermitagemuseum.org',
-    'hi-news.ru',
-    'histrf.ru',
-    'ilibrary.ru',
-    'in-space.ru',
-    'indicator.ru',
-    'infourok.ru',
-    'interneturok.ru',
-    'invb.ru',
-    'irecommend.ru',
-    'is74.ru',
-    'ivi.ru',
-    'joomag.com',
-    'jv.ru',
-    'karcher.ru',
-    'kartaslov.ru',
-    'karusel-tv.ru',
-    'khl.ru',
-    'knigogid.ru',
-    'kodeks.ru',
-    'kolesa.ru',
-    'kopilkaurokov.ru',
-    'kreml.ru',
-    'lektorium.tv',
-    'letidor.ru',
-    'lib.ru',
-    'linkgroup.ru',
-    'litres.ru',
-    'livejournal.com',
-    'livelib.ru',
-    'livesport.ru',
-    'maam.ru',
-    'mariinsky.ru',
-    'matchtv.ru',
-    'med-otzyv.ru',
-    'medi.ru',
-    'mediametrics.ru',
-    'medicalinsider.ru',
-    'medihost.ru',
-    'medikforum.ru',
-    'medlinks.ru',
-    'medportal.ru',
-    'medside.ru',
-    'mel.fm',
-    'mirtesen.ru',
-    'mirtv.ru',
-    'mkala.ru',
-    'mob-edu.ru',
-    'moluch.ru',
-    'moskb.ru',
-    'multiurok.ru',
-    'mybook.ru',
-    'myskills.ru',
-    'naked-science.ru',
-    'nat-geo.ru',
-    'nauchniestati.ru',
-    'netology.ru',
-    'nevasport.ru',
-    'nic.ru',
-    'nkj.ru',
-    'nplus1.ru',
-    'nskbl.ru',
-    'nsportal.ru',
-    'nukadeti.ru',
-    'obrazovaka.ru',
-    'ohotniki.ru',
-    'olimpiada.ru',
-    'onlinedoctor.ru',
-    'onlinetrade.ru',
-    'oprf.ru',
-    'otr-online.ru',
-    'otzovik.com',
-    'oum.ru',
-    'ped-kopilka.ru',
-    'pedsovet.org',
-    'pervbank.ru',
-    'pochtabank.ru',
-    'popmech.ru',
-    'postupi.online',
-    'povar.ru',
-    'professionali.ru',
-    'profi.ru',
-    'proza.ru',
-    'pypi.org',
-    'radiomayak.ru',
-    'radiorus.ru',
-    'radiovesti.ru',
-    'ren.tv',
-    'rgo.ru',
-    'rlsnet.ru',
-    'rosbank.ru',
-    'rosreestr.ru',
-    'rosuchebnik.ru',
-    'rsl.ru',
-    'rulit.me',
-    'rusarchives.ru',
-    'rusmuseum.ru',
-    'rusneb.ru',
-    'russkiiyazyk.ru',
-    'rustih.ru',
-    'rutube.ru',
-    'samlib.ru',
-    'sdamgia.ru',
-    'selfpub.ru',
-    'shm.ru',
-    'sirius.online',
-    'skyeng.ru',
-    'sledcom.ru',
-    'sm-news.ru',
-    'smi2.ru',
-    'smotrim.ru',
-    'soccer.ru',
-    'sovcombank.ru',
-    'sovsport.ru',
-    'spastv.ru',
-    'sport24.ru',
-    'sportrbc.ru',
-    'sportsdaily.ru',
-    'stihi.ru',
-    'sudact.ru',
-    'sudrf.ru',
-    'tamtam.chat',
-    'teleprogramma.pro',
-    'tiu.ru',
-    'tnt-online.ru',
-    'tretyakovgallery.ru',
-    'trudvsem.ru',
-    'tv3.ru',
-    'tvc.ru',
-    'tvkultura.ru',
-    'tvzvezda.ru',
-    'ucheba.ru',
-    'uchi.ru',
-    'uchportal.ru',
-    'unicreditbank.ru',
-    'uteka.ru',
-    'utkonos.ru',
-    'vbr.ru',
-    'verumreactor.ru',
-    'vesti.ru',
-    'videouroki.net',
-    'vitrina.tv',
-    'vm.ru',
-    'vokrugsveta.ru',
-    'vrachirf.ru',
-    'vsrf.ru',
-    'webinar.ru',
-    'wi-fi.ru',
-    'wikireading.ru',
-    'woman.ru',
-    'worldskills.ru',
-    'xn----7sbb5adknde1cb0dyd.xn--p1ai',
-    'xn--2020-f4dsa7cb5cl7h.xn--p1ai',
-    'xn--80aesfpebagmfblc0a.xn--p1ai',
-    'xn--80afcdbalict6afooklqi5o.xn--p1ai',
-    'xn--j1ahfl.xn--p1ai',
-    'yaklass.ru',
-    'youdo.com',
-    'youla.ru',
-    'zakon.ru',
-    'zdorovie.ru',
-    'zdorovieinfo.ru',
-    'znaika.ru',
-    'zoon.ru'];
+'akbars.ru',
+'babyblog.ru',
+'deepseek.com',
+'dnevnik.ru',
+'edimdoma.ru',
+'is74.ru',
+'ivi.ru',
+'kopilkaurokov.ru',
+'naked-science.ru',
+'nplus1.ru',
+'obrazovaka.ru',
+'pypi.org',
+'sdamgia.ru',
+'skyeng.ru',
+'uchi.ru',
+'videouroki.net',
+'cdnjs.cloudflare.com',
+'speed.cloudflare.com',
+'cloudflare.com',
+'microsoft.com',
+'youtube.com',
+'apple.com',
+'mail.ru',
+'ozon.ru',
+'dzen.ru',
+'wikipedia.org',
+'yandex.ru',
+'4pda.to',
+'cloudflare-dns.com',
+'vimeo.com',
+'chatgpt.com',
+'openai.com',
+'sourceforge.net',
+'hcaptcha.com',
+'claude.ai',
+'claude.com',
+'jquery.com',
+'grok.com'];
 
 function generateRandomEndpoint() {
     const ports = [500, 854, 859, 864, 878, 880, 890, 891, 894, 903, 908, 928, 934, 939, 942, 943, 945, 946, 955, 968, 987, 988, 1002, 1010, 1014, 1018, 1070, 1074, 1180, 1387, 1701, 1843, 2371, 2408, 2506, 3138, 3476, 3581, 3854, 4177, 4198, 4233, 4500, 5279, 5956, 7103, 7152, 7156, 7281, 7559, 8319, 8742, 8854, 8886];
     
     const selectedServer = getSelectedServer();
     
-    // Фильтруем порты в зависимости от выбранного сервера
-    let availablePorts = [...ports];
-    if (selectedServer === 'ltePL') {
-        availablePorts = ports.filter(port => port !== 988);
-    } else if (selectedServer === 'lteFL') {
-        availablePorts = ports.filter(port => port !== 1010);
-    }
-    
-    let port = availablePorts[Math.floor(Math.random() * availablePorts.length)];
+    const port = ports[Math.floor(Math.random() * ports.length)];
 
     if (selectedServer === 'def') {
         const prefixes = [
@@ -278,19 +73,19 @@ function generateRandomEndpoint() {
 		}}
 
     const serverMap = {
-		'ltePL': 'tel.pl.tribukvy.ltd',      // Польша LTE
-		'lteFL': 'tel.fi.tribukvy.ltd',   	 // Финляндия LTE
-		'lteDE': 'tel.de.tribukvy.ltd',  	 // Германия LTE		
-		'PL': 'pl.tribukvy.ltd',   		  	 // Польша
-		'DE': 'de.tribukvy.ltd',    	  	 // Германия
-		'RU': 'ru0.tribukvy.ltd',  		  	 // Россия
-		'EE': 'ee.tribukvy.ltd',    	 	 // Эстония
-		'NL': 'nl.tribukvy.ltd',  		 	 // Нидерланды
-		'FL': 'fi.tribukvy.ltd',  		 	 // Финляндия
-		'LV': 'lv.tribukvy.ltd' 		 	 // Латвия
+		'ltePL': 'tel.pl.llimonix.pw',      // Польша LTE
+		'lteFL': 'tel.fi.llimonix.pw',   	 // Финляндия LTE
+		'lteDE': 'tel.de.llimonix.pw',  	 // Германия LTE		
+		'PL': 'pl.llimonix.pw',   		  	 // Польша
+		'DE': 'de.llimonix.pw',    	  	 // Германия
+		'RU': 'ru0.llimonix.pw',  		  	 // Россия
+		'EE': 'ee.llimonix.pw',    	 	 // Эстония
+		'NL': 'nl.llimonix.pw',  		 	 // Нидерланды
+		'FL': 'fi.llimonix.pw',  		 	 // Финляндия
+		'LV': 'lv.llimonix.pw' 		 	 // Латвия
 	};
 
-	const endpoint = serverMap[selectedServer] || 'pl.tribukvy.ltd';
+	const endpoint = serverMap[selectedServer] || 'pl.llimonix.pw';
 	return `${endpoint}:${port}`;
 }
 
@@ -318,12 +113,12 @@ function getConfigPrefix() {
 		'US': 'us'
 	};
 
-	const dnsPrefixMap = {
-		'malw': 'mlw',
-		'xbox': 'xbx',
-		'geohide': 'ghd',
-		'comss': 'cms'
-	};
+    const dnsPrefixMap = {
+        'malw': 'mlw',
+        'geodema': 'gdm',
+        'geohide': 'ghd',
+        'bezmezhau': 'bzm'
+    }
 
 	let prefix = '';
 
@@ -361,7 +156,7 @@ function getSelectedDNS() {
 
 
 const DEFAULT_I1_VALUES = {
-    1: 'I1 = <b 0xce000000010897a297ecc34cd6dd000044d0ec2e2e1ea2991f467ace4222129b5a098823784694b4897b9986ae0b7280135fa85e196d9ad980b150122129ce2a9379531b0fd3e871ca5fdb883c369832f730e272d7b8b74f393f9f0fa43f11e510ecb2219a52984410c204cf875585340c62238e14ad04dff382f2c200e0ee22fe743b9c6b8b043121c5710ec289f471c91ee414fca8b8be8419ae8ce7ffc53837f6ade262891895f3f4cecd31bc93ac5599e18e4f01b472362b8056c3172b513051f8322d1062997ef4a383b01706598d08d48c221d30e74c7ce000cdad36b706b1bf9b0607c32ec4b3203a4ee21ab64df336212b9758280803fcab14933b0e7ee1e04a7becce3e2633f4852585c567894a5f9efe9706a151b615856647e8b7dba69ab357b3982f554549bef9256111b2d67afde0b496f16962d4957ff654232aa9e845b61463908309cfd9de0a6abf5f425f577d7e5f6440652aa8da5f73588e82e9470f3b21b27b28c649506ae1a7f5f15b876f56abc4615f49911549b9bb39dd804fde182bd2dcec0c33bad9b138ca07d4a4a1650a2c2686acea05727e2a78962a840ae428f55627516e73c83dd8893b02358e81b524b4d99fda6df52b3a8d7a5291326e7ac9d773c5b43b8444554ef5aea104a738ed650aa979674bbed38da58ac29d87c29d387d80b526065baeb073ce65f075ccb56e47533aef357dceaa8293a523c5f6f790be90e4731123d3c6152a70576e90b4ab5bc5ead01576c68ab633ff7d36dcde2a0b2c68897e1acfc4d6483aaaeb635dd63c96b2b6a7a2bfe042f6aed82e5363aa850aace12ee3b1a93f30d8ab9537df483152a5527faca21efc9981b304f11fc95336f5b9637b174c5a0659e2b22e159a9fed4b8e93047371175b1d6d9cc8ab745f3b2281537d1c75fb9451871864efa5d184c38c185fd203de206751b92620f7c369e031d2041e152040920ac2c5ab5340bfc9d0561176abf10a147287ea90758575ac6a9f5ac9f390d0d5b23ee12af583383d994e22c0cf42383834bcd3ada1b3825a0664d8f3fb678261d57601ddf94a8a68a7c273a18c08aa99c7ad8c6c42eab67718843597ec9930457359dfdfbce024afc2dcf9348579a57d8d3490b2fa99f278f1c37d87dad9b221acd575192ffae1784f8e60ec7cee4068b6b988f0433d96d6a1b1865f4e155e9fe020279f434f3bf1bd117b717b92f6cd1cc9bea7d45978bcc3f24bda631a36910110a6ec06da35f8966c9279d130347594f13e9e07514fa370754d1424c0a1545c5070ef9fb2acd14233e8a50bfc5978b5bdf8bc1714731f798d21e2004117c61f2989dd44f0cf027b27d4019e81ed4b5c31db347c4a3a4d85048d7093cf16753d7b0d15e078f5c7a5205dc2f87e330a1f716738dce1c6180e9d02869b5546f1c4d2748f8c90d9693cba4e0079297d22fd61402dea32ff0eb69ebd65a5d0b687d87e3a8b2c42b648aa723c7c7daf37abcc4bb85caea2ee8f55bec20e913b3324ab8f5c3304f820d42ad1b9f2ffc1a3af9927136b4419e1e579ab4c2ae3c776d293d397d575df181e6cae0a4ada5d67ecea171cca3288d57c7bbdaee3befe745fb7d634f70386d873b90c4d6c6596bb65af68f9e5121e67ebf0d89d3c909ceedfb32ce9575a7758ff080724e1ab5d5f43074ecb53a479af21ed03d7b6899c36631c0166f9d47e5e1d4528a5d3d3f744029c4b1c190cbfbad06f5f83f7ad0429fa9a2719c56ffe3783460e166de2d8>',
+    1: 'I1 = <b 0xc5000000010826d86f66ad7ce163000044d0281711d7710685a10bafa4d241fe2c9bf06b04d70fe08bf8179abba90d0b6a9669fe8afae5600934c2da89bcbd3c5546914323abe59e17963d18214487c24351a70f9e249d46481879825301cd0e271277d7461827f2237b6ddfda7becd1402ab7520c61bf00089f5539dea5080f287906faa23ca79ed139baa90ca7362038477e9947194c2e7285e649bd4072f5caad7a09e18ccac98a8e5d128ceb389274ec4ec83ad2df56c7bcf6f31ac46915a7d793983af1a09e7c14857efcd67f66b7c6c7caec9bfb94ce69eda984acf7d03418ffde28dfc83564b0fbd9c87da81a7c3a7d92aefb99ce6b839fb034c68f35b5c9a1c65d14e1db5d8431224f4fc46f2ff65805c69d4e6fd63b7980a938f6338ab4f5716b17730e718128fd03023cbe67e8a2333a65b9136a1a546070f62e202cd65b000fa46d8c78161fc13d231c336116bc13bcc6af8b1bce505cb47541b0b4e92ba9bc6fc1e33be808d39c97d21722cb6d13a24ab2438c6527495bded7173337a96db10e7c7cb0dff3855dba80665ff5a8f371d4d4dcb8bfbc5d51c9c882b21381c0c18b95e5372138a4c21d52255528ce197fbeb16e2d582a47cc9e19bdb50ac8df0c8984a0b302bb6e3076c26532d264a73bd3fb169d16b0ce290ed1ccb0b7b8f9030e6631ddeb5f26c69a115c89535bdacb2ce8b452d1ced9f9a89c36592bfabf4d7d037f7ed1acc846e42a7649d2abe188b10a8f3bd5b85b22b0509cb4f5ce0d43895ce52b4ca13828210ef6cf71f6cd3b6372a54ee2a49c7eee576b79f9dec4547fe91fc156d57ab0ccbfd727ebe0a825e22ce4c1a002b148481e9654db6cd53b1c24a690772e23dcf5a4c5a4fb955adfc0532d7ca36ab577929db56865b1ecb89667f5289ff0a9824d4c28045b95c06edae09429d80d2d2badc30a19acbe7e82a56ba99fb3e3238ee1e72a2445910be5d28b59337194b29256288c3ad2808f435dd46bebd9b0ccd1e7c4d0f8df811c80baa0d2f6b351e793308498bc30e5dbcab406e23776e22d97ce4ab5e963d0676e376baa13ae43d25c0d3bea1b4798afabadd78709768b9de5deba8217d744f5958d44cacf42d7ea3733375df16cded5701c6c8e8db8416c440aa1cb5db684a1a4f39e24038b90ddd35b1e5fa2c10a79180023c81b4e6bdcce0ed63357005e180b1312e5d4b33d292ca2e9bdbbae747ba15b4fc17e79d01b0c9329d201d5a64f7967832b67a8c673ca8f125c12be31d4fc22104f3e0621fa50ccc228d6bb688c3d2deb56ce547a700100b010d84d90878dc51fe67247e732ec6db944c6cec4b1608d71b0f8d471772bde6a153768fe53c9d2bf5a33630e8bdddffe8ae90ce852fb5263bd6a61df140b0fe114cca39a292e82ef0a7e4f4638b999e465e22c875bbd0310e275bb70e4f66d8da235d93011208d7dec3ead4e826d53518b53b600d30fc40ba74ebff0f6e5b99756f594827b4c18fa54d7840156b485d1c4246a78fea594fad626fb6fb7a40ecb6e3a4957a051a43bdd34ffb576dea0c55b7227df74bdd71ad9f2e28b24bee3aaafe8123f1794e7b9d67093fc1bea931f54453d9e8ceec8d568052d99a1cb2ab051ff496eaa4122156a8dd261a9da2db64c0e9555ac657794c9ff46e6c3eb7ea57dfd762033fc094e2449baf2ae5772829d0cadd95565c74015ced5bc1d559c99ec28e2799e47f0a53589cc936ce094f5e18fccd7c97ad8cff05346cf5588cbb7afa1e3>',
     2: '',
     3: 'I1 = <b 0x494e56495445207369703a626f624062696c6f78692e636f6d205349502f322e300d0a5669613a205349502f322e302f55445020706333332e61746c616e74612e636f6d3b6272616e63683d7a39684734624b3737366173646864730d0a4d61782d466f7277617264733a2037300d0a546f3a20426f62203c7369703a626f624062696c6f78692e636f6d3e0d0a46726f6d3a20416c696365203c7369703a616c6963654061746c616e74612e636f6d3e3b7461673d313932383330313737340d0a43616c6c2d49443a20613834623463373665363637313040706333332e61746c616e74612e636f6d0d0a435365713a2033313431353920494e564954450d0a436f6e746163743a203c7369703a616c69636540706333332e61746c616e74612e636f6d3e0d0a436f6e74656e742d547970653a206170706c69636174696f6e2f7364700d0a436f6e74656e742d4c656e6774683a20300d0a0d0a>\nI2 = <b 0x5349502f322e302031303020547279696e670d0a5669613a205349502f322e302f55445020706333332e61746c616e74612e636f6d3b6272616e63683d7a39684734624b3737366173646864730d0a546f3a20426f62203c7369703a626f624062696c6f78692e636f6d3e0d0a46726f6d3a20416c696365203c7369703a616c6963654061746c616e74612e636f6d3e3b7461673d313932383330313737340d0a43616c6c2d49443a20613834623463373665363637313040706333332e61746c616e74612e636f6d0d0a435365713a2033313431353920494e564954450d0a436f6e74656e742d4c656e6774683a20300d0a0d0a>'
 };
@@ -622,44 +417,44 @@ rules:
    i1: <b 0xc800000001018800002b45615e996de27ff5ec5f583061ab38eac69fd8fec356802847cd1c7c15a87402bb0a433d4054defedc066e>${awg3cConfig}`;
 			proxy = `- name: "🇵🇱 PL"
   <<: [ *warp-common, *awg ]
-  server: pl.tribukvy.ltd
+  server: pl.llimonix.pw
   port: 500
 - name: "🇳🇱 NL"
   <<: [ *warp-common, *awg ]
-  server: nl.tribukvy.ltd
+  server: nl.llimonix.pw
   port: 500  
 - name: "🇫🇮 FI"
   <<: [ *warp-common, *awg ]
-  server: fi.tribukvy.ltd
+  server: fi.llimonix.pw
   port: 500
 - name: "🇷🇺 RU"
   <<: [ *warp-common, *awg ]
-  server: ru0.tribukvy.ltd
+  server: ru0.llimonix.pw
   port: 500
 - name: "🇱🇻 LV"
   <<: [ *warp-common, *awg ]
-  server: lv.tribukvy.ltd
+  server: lv.llimonix.pw
   port: 500
 - name: "🇩🇪 DE"
   <<: [ *warp-common, *awg ]
-  server: de.tribukvy.ltd
+  server: de.llimonix.pw
   port: 500
 - name: "🇪🇪 EE"
   <<: [ *warp-common, *awg ]
-  server: ee.tribukvy.ltd
+  server: ee.llimonix.pw
   port: 500  
   
 - name: "[LTE] 🇵🇱 PL"
   <<: [ *warp-common, *awg ]
-  server: tel.pl.tribukvy.ltd
+  server: tel.pl.llimonix.pw
   port: 500
 - name: "[LTE] 🇩🇪 DE"
   <<: [ *warp-common, *awg ]
-  server: tel.de.tribukvy.ltd
+  server: tel.de.llimonix.pw
   port: 500  
 - name: "[LTE] 🇫🇮 FI"
   <<: [ *warp-common, *awg ]
-  server: tel.fi.tribukvy.ltd
+  server: tel.fi.llimonix.pw
   port: 500`;
 			proxyg = `proxy-groups:
 - name: WARP + llimonix
@@ -709,7 +504,7 @@ proxies:
    jc: 4
    jmin: 40
    jmax: 70
-   i1: <b 0xce000000010897a297ecc34cd6dd000044d0ec2e2e1ea2991f467ace4222129b5a098823784694b4897b9986ae0b7280135fa85e196d9ad980b150122129ce2a9379531b0fd3e871ca5fdb883c369832f730e272d7b8b74f393f9f0fa43f11e510ecb2219a52984410c204cf875585340c62238e14ad04dff382f2c200e0ee22fe743b9c6b8b043121c5710ec289f471c91ee414fca8b8be8419ae8ce7ffc53837f6ade262891895f3f4cecd31bc93ac5599e18e4f01b472362b8056c3172b513051f8322d1062997ef4a383b01706598d08d48c221d30e74c7ce000cdad36b706b1bf9b0607c32ec4b3203a4ee21ab64df336212b9758280803fcab14933b0e7ee1e04a7becce3e2633f4852585c567894a5f9efe9706a151b615856647e8b7dba69ab357b3982f554549bef9256111b2d67afde0b496f16962d4957ff654232aa9e845b61463908309cfd9de0a6abf5f425f577d7e5f6440652aa8da5f73588e82e9470f3b21b27b28c649506ae1a7f5f15b876f56abc4615f49911549b9bb39dd804fde182bd2dcec0c33bad9b138ca07d4a4a1650a2c2686acea05727e2a78962a840ae428f55627516e73c83dd8893b02358e81b524b4d99fda6df52b3a8d7a5291326e7ac9d773c5b43b8444554ef5aea104a738ed650aa979674bbed38da58ac29d87c29d387d80b526065baeb073ce65f075ccb56e47533aef357dceaa8293a523c5f6f790be90e4731123d3c6152a70576e90b4ab5bc5ead01576c68ab633ff7d36dcde2a0b2c68897e1acfc4d6483aaaeb635dd63c96b2b6a7a2bfe042f6aed82e5363aa850aace12ee3b1a93f30d8ab9537df483152a5527faca21efc9981b304f11fc95336f5b9637b174c5a0659e2b22e159a9fed4b8e93047371175b1d6d9cc8ab745f3b2281537d1c75fb9451871864efa5d184c38c185fd203de206751b92620f7c369e031d2041e152040920ac2c5ab5340bfc9d0561176abf10a147287ea90758575ac6a9f5ac9f390d0d5b23ee12af583383d994e22c0cf42383834bcd3ada1b3825a0664d8f3fb678261d57601ddf94a8a68a7c273a18c08aa99c7ad8c6c42eab67718843597ec9930457359dfdfbce024afc2dcf9348579a57d8d3490b2fa99f278f1c37d87dad9b221acd575192ffae1784f8e60ec7cee4068b6b988f0433d96d6a1b1865f4e155e9fe020279f434f3bf1bd117b717b92f6cd1cc9bea7d45978bcc3f24bda631a36910110a6ec06da35f8966c9279d130347594f13e9e07514fa370754d1424c0a1545c5070ef9fb2acd14233e8a50bfc5978b5bdf8bc1714731f798d21e2004117c61f2989dd44f0cf027b27d4019e81ed4b5c31db347c4a3a4d85048d7093cf16753d7b0d15e078f5c7a5205dc2f87e330a1f716738dce1c6180e9d02869b5546f1c4d2748f8c90d9693cba4e0079297d22fd61402dea32ff0eb69ebd65a5d0b687d87e3a8b2c42b648aa723c7c7daf37abcc4bb85caea2ee8f55bec20e913b3324ab8f5c3304f820d42ad1b9f2ffc1a3af9927136b4419e1e579ab4c2ae3c776d293d397d575df181e6cae0a4ada5d67ecea171cca3288d57c7bbdaee3befe745fb7d634f70386d873b90c4d6c6596bb65af68f9e5121e67ebf0d89d3c909ceedfb32ce9575a7758ff080724e1ab5d5f43074ecb53a479af21ed03d7b6899c36631c0166f9d47e5e1d4528a5d3d3f744029c4b1c190cbfbad06f5f83f7ad0429fa9a2719c56ffe3783460e166de2d8>${awg3cConfig}
+   i1: <b 0xc5000000010826d86f66ad7ce163000044d0281711d7710685a10bafa4d241fe2c9bf06b04d70fe08bf8179abba90d0b6a9669fe8afae5600934c2da89bcbd3c5546914323abe59e17963d18214487c24351a70f9e249d46481879825301cd0e271277d7461827f2237b6ddfda7becd1402ab7520c61bf00089f5539dea5080f287906faa23ca79ed139baa90ca7362038477e9947194c2e7285e649bd4072f5caad7a09e18ccac98a8e5d128ceb389274ec4ec83ad2df56c7bcf6f31ac46915a7d793983af1a09e7c14857efcd67f66b7c6c7caec9bfb94ce69eda984acf7d03418ffde28dfc83564b0fbd9c87da81a7c3a7d92aefb99ce6b839fb034c68f35b5c9a1c65d14e1db5d8431224f4fc46f2ff65805c69d4e6fd63b7980a938f6338ab4f5716b17730e718128fd03023cbe67e8a2333a65b9136a1a546070f62e202cd65b000fa46d8c78161fc13d231c336116bc13bcc6af8b1bce505cb47541b0b4e92ba9bc6fc1e33be808d39c97d21722cb6d13a24ab2438c6527495bded7173337a96db10e7c7cb0dff3855dba80665ff5a8f371d4d4dcb8bfbc5d51c9c882b21381c0c18b95e5372138a4c21d52255528ce197fbeb16e2d582a47cc9e19bdb50ac8df0c8984a0b302bb6e3076c26532d264a73bd3fb169d16b0ce290ed1ccb0b7b8f9030e6631ddeb5f26c69a115c89535bdacb2ce8b452d1ced9f9a89c36592bfabf4d7d037f7ed1acc846e42a7649d2abe188b10a8f3bd5b85b22b0509cb4f5ce0d43895ce52b4ca13828210ef6cf71f6cd3b6372a54ee2a49c7eee576b79f9dec4547fe91fc156d57ab0ccbfd727ebe0a825e22ce4c1a002b148481e9654db6cd53b1c24a690772e23dcf5a4c5a4fb955adfc0532d7ca36ab577929db56865b1ecb89667f5289ff0a9824d4c28045b95c06edae09429d80d2d2badc30a19acbe7e82a56ba99fb3e3238ee1e72a2445910be5d28b59337194b29256288c3ad2808f435dd46bebd9b0ccd1e7c4d0f8df811c80baa0d2f6b351e793308498bc30e5dbcab406e23776e22d97ce4ab5e963d0676e376baa13ae43d25c0d3bea1b4798afabadd78709768b9de5deba8217d744f5958d44cacf42d7ea3733375df16cded5701c6c8e8db8416c440aa1cb5db684a1a4f39e24038b90ddd35b1e5fa2c10a79180023c81b4e6bdcce0ed63357005e180b1312e5d4b33d292ca2e9bdbbae747ba15b4fc17e79d01b0c9329d201d5a64f7967832b67a8c673ca8f125c12be31d4fc22104f3e0621fa50ccc228d6bb688c3d2deb56ce547a700100b010d84d90878dc51fe67247e732ec6db944c6cec4b1608d71b0f8d471772bde6a153768fe53c9d2bf5a33630e8bdddffe8ae90ce852fb5263bd6a61df140b0fe114cca39a292e82ef0a7e4f4638b999e465e22c875bbd0310e275bb70e4f66d8da235d93011208d7dec3ead4e826d53518b53b600d30fc40ba74ebff0f6e5b99756f594827b4c18fa54d7840156b485d1c4246a78fea594fad626fb6fb7a40ecb6e3a4957a051a43bdd34ffb576dea0c55b7227df74bdd71ad9f2e28b24bee3aaafe8123f1794e7b9d67093fc1bea931f54453d9e8ceec8d568052d99a1cb2ab051ff496eaa4122156a8dd261a9da2db64c0e9555ac657794c9ff46e6c3eb7ea57dfd762033fc094e2449baf2ae5772829d0cadd95565c74015ced5bc1d559c99ec28e2799e47f0a53589cc936ce094f5e18fccd7c97ad8cff05346cf5588cbb7afa1e3>${awg3cConfig}
 - name: "Стандартный 2"
   <<: *warp-common
   server: 162.159.192.1
@@ -841,44 +636,44 @@ if (isAwg31) {
 proxies:
 - name: "🇵🇱 PL"
   <<: [ *warp-common ]
-  server: pl.tribukvy.ltd
+  server: pl.llimonix.pw
   port: 500
 - name: "🇳🇱 NL"
   <<: [ *warp-common ]
-  server: nl.tribukvy.ltd
+  server: nl.llimonix.pw
   port: 500
 - name: "🇫🇮 FI"
   <<: [ *warp-common ]
-  server: fi.tribukvy.ltd
+  server: fi.llimonix.pw
   port: 500
 - name: "🇷🇺 RU"
   <<: [ *warp-common ]
-  server: ru0.tribukvy.ltd
+  server: ru0.llimonix.pw
   port: 500
 - name: "🇱🇻 LV"
   <<: [ *warp-common ]
-  server: lv.tribukvy.ltd
+  server: lv.llimonix.pw
   port: 500
 - name: "🇩🇪 DE"
   <<: [ *warp-common ]
-  server: de.tribukvy.ltd
+  server: de.llimonix.pw
   port: 500
 - name: "🇪🇪 EE"
   <<: [ *warp-common ]
-  server: ee.tribukvy.ltd
+  server: ee.llimonix.pw
   port: 500  
   
 - name: "[LTE] 🇵🇱 PL"
   <<: [ *warp-common ]
-  server: tel.pl.tribukvy.ltd
+  server: tel.pl.llimonix.pw
   port: 500
 - name: "[LTE] 🇩🇪 DE"
   <<: [ *warp-common ]
-  server: tel.de.tribukvy.ltd
+  server: tel.de.llimonix.pw
   port: 500  
 - name: "[LTE] 🇫🇮 FI"
   <<: [ *warp-common ]
-  server: tel.fi.tribukvy.ltd
+  server: tel.fi.llimonix.pw
   port: 500`;
 			proxyg = `proxy-groups:
 - name: WARP + llimonix
@@ -1041,7 +836,7 @@ async function generateConfig7() {
     button.disabled = true;
     button.classList.add("button--loading");
     try {
-		const options = ['ca000000010192000040523d20151ea578688a48502d1b7d5ae46906ceb14547fec9aee98a407dab61b229ca5f6707be89c159f3cf9b73a3b8d906f7d3e307f8e39fdb0d35b23c0ffc635d285418cea8bfd98009d234e0e4f95891a7f4', 'c400000001015c000040570b2e25e1a2fb2e1d5cf2bfdaeb0ca79c3255f6384628e6e6c22adb43440db63fa1d26ad16120d9cbdbf0dc2f7a8eb3525561b193c6b6a0ef44e8d118c3b04a3ae880c081a9b9e97321315915787938abd8b925506b830d', 'cb0000000101d6000040500195593d5d325e28e7a9d879ff474b9a1a344d76a202d92776ceaee0e7f8d933ded8bc2f49a31d19cfa2f42a8b6e056c76c4d64b4f09d870f342e0872e69f5486b4e35e32314107a3937b8d3cf14cfc8', 'ce0000000101a400004056160e0ac66b428015297d5e103316b68a89058b61bd795b8cdfd9e6f10e28626e7a4cdf5439f6f67a3b29b4a72361b99cd77343bcb2de18370bdb40b930b3720f46ac48c1833eea55caf480f801f7cbf2694c9860cb6b', 'c70000000101ee00004052dce5fd8b7962ba5c6a03d50565ac10d5cf625b0504d3dd5fc9d3e1e620bb4fd278dd951bb491a144244d01fd9decd226554690447e87773fb6e5212d09e8a5aa2cd9a2a3e25325b5b81264b0a2c315594e05'];
+		const options = ['ca000000010192000040523d20151ea578688a48502d1b7d5ae46906ceb14547fec9aee98a407dab61b229ca5f6707be89c159f3cf9b73a3b8d906f7d3e307f8e39fdb0d35b23c0ffc635d285418cea8bfd98009d234e0e4f95891a7f4', 'c400000001015c000040570b2e25e1a2fb2e1d5cf2bfdaeb0ca79c3255f6384628e6e6c22adb43440db63fa1d26ad16120d9cbdbf0dc2f7a8eb3525561b193c6b6a0ef44e8d118c3b04a3ae880c081a9b9e97321315915787938abd8b925506b830d', 'cb0000000101d6000040500195593d5d325e28e7a9d879ff474b9a1a344d76a202d92776ceaee0e7f8d933ded8bc2f49a31d19cfa2f42a8b6e056c76c4d64b4f09d870f342e0872e69f5486b4e35e32314107a3937b8d3cf14cfc8', 'ce0000000101a400004056160e0ac66b428015297d5e103316b68a89058b61bd795b8cdfd9e6f10e28626e7a4cdf5439f6f67a3b29b4a72361b99cd77343bcb2de18370bdb40b930b3720f46ac48c1833eea55caf480f801f7cbf2694c9860cb6b', 'c5000000010826d86f66ad7ce163000044d0281711d7710685a10bafa4d241fe2c9bf06b04d70fe08bf8179abba90d0b6a9669fe8afae5600934c2da89bcbd3c5546914323abe59e17963d18214487c24351a70f9e249d46481879825301cd0e271277d7461827f2237b6ddfda7becd1402ab7520c61bf00089f5539dea5080f287906faa23ca79ed139baa90ca7362038477e9947194c2e7285e649bd4072f5caad7a09e18ccac98a8e5d128ceb389274ec4ec83ad2df56c7bcf6f31ac46915a7d793983af1a09e7c14857efcd67f66b7c6c7caec9bfb94ce69eda984acf7d03418ffde28dfc83564b0fbd9c87da81a7c3a7d92aefb99ce6b839fb034c68f35b5c9a1c65d14e1db5d8431224f4fc46f2ff65805c69d4e6fd63b7980a938f6338ab4f5716b17730e718128fd03023cbe67e8a2333a65b9136a1a546070f62e202cd65b000fa46d8c78161fc13d231c336116bc13bcc6af8b1bce505cb47541b0b4e92ba9bc6fc1e33be808d39c97d21722cb6d13a24ab2438c6527495bded7173337a96db10e7c7cb0dff3855dba80665ff5a8f371d4d4dcb8bfbc5d51c9c882b21381c0c18b95e5372138a4c21d52255528ce197fbeb16e2d582a47cc9e19bdb50ac8df0c8984a0b302bb6e3076c26532d264a73bd3fb169d16b0ce290ed1ccb0b7b8f9030e6631ddeb5f26c69a115c89535bdacb2ce8b452d1ced9f9a89c36592bfabf4d7d037f7ed1acc846e42a7649d2abe188b10a8f3bd5b85b22b0509cb4f5ce0d43895ce52b4ca13828210ef6cf71f6cd3b6372a54ee2a49c7eee576b79f9dec4547fe91fc156d57ab0ccbfd727ebe0a825e22ce4c1a002b148481e9654db6cd53b1c24a690772e23dcf5a4c5a4fb955adfc0532d7ca36ab577929db56865b1ecb89667f5289ff0a9824d4c28045b95c06edae09429d80d2d2badc30a19acbe7e82a56ba99fb3e3238ee1e72a2445910be5d28b59337194b29256288c3ad2808f435dd46bebd9b0ccd1e7c4d0f8df811c80baa0d2f6b351e793308498bc30e5dbcab406e23776e22d97ce4ab5e963d0676e376baa13ae43d25c0d3bea1b4798afabadd78709768b9de5deba8217d744f5958d44cacf42d7ea3733375df16cded5701c6c8e8db8416c440aa1cb5db684a1a4f39e24038b90ddd35b1e5fa2c10a79180023c81b4e6bdcce0ed63357005e180b1312e5d4b33d292ca2e9bdbbae747ba15b4fc17e79d01b0c9329d201d5a64f7967832b67a8c673ca8f125c12be31d4fc22104f3e0621fa50ccc228d6bb688c3d2deb56ce547a700100b010d84d90878dc51fe67247e732ec6db944c6cec4b1608d71b0f8d471772bde6a153768fe53c9d2bf5a33630e8bdddffe8ae90ce852fb5263bd6a61df140b0fe114cca39a292e82ef0a7e4f4638b999e465e22c875bbd0310e275bb70e4f66d8da235d93011208d7dec3ead4e826d53518b53b600d30fc40ba74ebff0f6e5b99756f594827b4c18fa54d7840156b485d1c4246a78fea594fad626fb6fb7a40ecb6e3a4957a051a43bdd34ffb576dea0c55b7227df74bdd71ad9f2e28b24bee3aaafe8123f1794e7b9d67093fc1bea931f54453d9e8ceec8d568052d99a1cb2ab051ff496eaa4122156a8dd261a9da2db64c0e9555ac657794c9ff46e6c3eb7ea57dfd762033fc094e2449baf2ae5772829d0cadd95565c74015ced5bc1d559c99ec28e2799e47f0a53589cc936ce094f5e18fccd7c97ad8cff05346cf5588cbb7afa1e3'];
         const data = await fetchWarpData();
 		const prefix = getConfigPrefix();
 		const ipv6Toggle = document.getElementById('ipv6');
